@@ -13,10 +13,7 @@ var VideoPlayerView = Backbone.View.extend({
   render: function (object = this.collection.models[0]) {
     //if render is called with no arguments, default to an object 
     // if (!arguments.length) {
-      
     // }
-    // console.log(object);
-    console.log(window.exampleVideoData)
     // this.$el.html(this.template(this.collection.models[0].attributes));
     this.$el.html(this.template(object.attributes));
     return this;

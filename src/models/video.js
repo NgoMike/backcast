@@ -8,7 +8,6 @@ var Video = Backbone.Model.extend({
   },
 
   select: function() {
-    console.log("I am in the model: ", this)
     this.trigger('select', this);
     this.set('flag', !this.get('flag'));
   }
